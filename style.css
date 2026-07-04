@@ -7,6 +7,10 @@
     font-display: swap;
 }
 
+:root {
+    --submit-btn-color: white;
+}
+
 body {
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -22,19 +26,6 @@ body {
     background-image: url("./agnese-rudzite-kSxkjuDMY0Q-unsplash.jpg");
     background-size: cover;
     text-align: center;
-}
-
-.main {
-    width: 60%;
-    height: 100vh;
-    background-color: lightpink;
-    font-size: 20px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    gap: 32px;
 }
 
 .header {
@@ -63,15 +54,31 @@ img {
     font-style: italic;
 }
 
+.main {
+    width: 60%;
+    height: 100vh;
+    background-color: lightpink;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 48px;
+}
+
 .main-top,
 .main-form,
 .main-bottom {
     padding-left: 32px;
-    /* border: 2px dashed red; */
 }
 
 .main-top {
     font-weight: bold;
+    line-height: 1.25;
+    font-size: 1.5rem;
+    max-width: 50ch;
+    text-wrap: pretty;
 }
 
 .main-form {
@@ -99,6 +106,23 @@ form input {
     border-radius: 5px;
 }
 
+input:focus {
+    border: 3px solid blue;
+}
+
+input[type="password"]:user-invalid {
+    border: 3px solid red;
+}
+
 #submit-button {
-    font-size: large;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--submit-btn-color);
+    padding: 5px 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    font-family: inherit;
+}
+
+#submit-button:active {
+    color: lightpink;
 }
