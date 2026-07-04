@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Barbie SomeOne';
+    src: url('Barbie_SomeOne.woff2') format('woff2'),
+        url('Barbie_SomeOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

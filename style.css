@@ -1,3 +1,69 @@
+@font-face {
+    font-family: 'Barbie SomeOne';
+    src: url('./fonts/Barbie_SomeOne.woff2') format('woff2'),
+        url('./fonts/Barbie_SomeOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
-    background-color: lightpink;
+    box-sizing: border-box;
+    background-color: black;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.sidebar {
+    width: 40vw;
+    height: 100vh;
+    background-image: url("./agnese-rudzite-kSxkjuDMY0Q-unsplash.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.main {
+    width: 60vw;
+    height: 100vh;
+    background-color: red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.main-top,
+.main-form,
+.main-bottom {
+    height: 33vh;
+    border: 10px solid blue;
+}
+
+.header {
+    font-size: 5rem;
+    font-family: 'Barbie SomeOne';
+    margin-left: 25px;
+}
+
+#header-wrapper {
+    color: white;
+    opacity: .1;
+    background-color: black;
+    margin-top: 8%;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img {
+    height: 150px;
+}
+
+.italic-text {
+    font-style: italic;
 }
