@@ -23,52 +23,52 @@
         Middle container needs class to adjust background/shadow
     -->
         <div class="main-top">
-            This is not a real online service! You know you need
+            <p>This is not a real online service! You know you need
             something like this in your life to help you realize
-            your deepest dreams<br>
-            Sign up <span class="italic-text">now</span> to get started<br>
+            your deepest dreams.<br>
+            Sign up <span class="italic-text">now</span> to get started.<br>
+            </p>
+            <p>
             You <span class="italic-text">know</span> you want to.
+            </p>
         </div>
 
         <div class="main-form">
+            <h3>Let's Do This</h3>
             <form action="" method="GET" id="sign-up-form">
-                <h2>Let's Do This</h2>
                 <div>
                     <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
                 </div>
-                <input type="text" name="first-name" id="first-name">
-
                 <div>
                     <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
                 </div>
-                <input type="text" name="last-name" id="last-name">
-                
                 <div>
                     <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
                 </div>
-                <input type="email" name="email" id="email">
-
                 <div>
                     <label for="telephone">Telephone</label>
+                    <input type="tel" name="telephone" id="telephone">
                 </div>
-                <input type="tel" name="telephone" id="telephone">
-
                 <div>
                     <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
                 </div>
-                <input type="password" name="password" id="password">
-
                 <div>
                     <label for="password-confirm">Confirm Password</label>
+                    <input type="password" name="password-confirm" id="password-confirm">
                 </div>
-                <input type="password" name="password-confirm" id="password-confirm">
             </form>
         </div>
 
         <div class="main-bottom">
             <!-- Submit button (link to form in attribute) and Login option -->
-            <input type="submit" form="sign-up-form">
-            Already a member? <a href="">Login</a> here
+            <input type="submit" form="sign-up-form" id="submit-button">
+            <p>
+            Already have an account? <a href="">Login</a> here
+            </p>
         </div>
     </div>
 </body>

@@ -9,7 +9,7 @@
 
 body {
     box-sizing: border-box;
-    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     display: flex;
     align-items: stretch;
@@ -17,7 +17,7 @@ body {
 }
 
 .sidebar {
-    width: 40vw;
+    width: 40%;
     height: 100vh;
     background-image: url("./agnese-rudzite-kSxkjuDMY0Q-unsplash.jpg");
     background-size: cover;
@@ -25,20 +25,16 @@ body {
 }
 
 .main {
-    width: 60vw;
+    width: 60%;
     height: 100vh;
-    background-color: red;
+    background-color: lightpink;
+    font-size: 20px;
 
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-}
-
-.main-top,
-.main-form,
-.main-bottom {
-    height: 33vh;
-    border: 10px solid blue;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
 }
 
 .header {
@@ -49,16 +45,15 @@ body {
 
 #header-wrapper {
     color: white;
-    opacity: .1;
-    background-color: black;
+    /* opacity: .1; */
+    background-color: rgba(0, 0, 0, 0.1);
     margin-top: 8%;
-    height: 150px;
+    height: 155px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 img {
     height: 150px;
@@ -66,4 +61,44 @@ img {
 
 .italic-text {
     font-style: italic;
+}
+
+.main-top,
+.main-form,
+.main-bottom {
+    padding-left: 32px;
+    /* border: 2px dashed red; */
+}
+
+.main-top {
+    font-weight: bold;
+}
+
+.main-form {
+    background-color: pink;
+    height: 30%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    row-gap: 16px;
+    font-size: 16px;
+}
+
+form > div {
+    display:  flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+form input {
+    width: 250px;
+    font: inherit;
+    border-radius: 5px;
+}
+
+#submit-button {
+    font-size: large;
 }
